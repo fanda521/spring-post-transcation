@@ -1,0 +1,10 @@
+CREATE TABLE `t_person` (
+  `c_id` int(11) NOT NULL AUTO_INCREMENT COMMENT '主键id',
+  `c_name` varchar(24) DEFAULT NULL COMMENT '姓名',
+  `c_age` int(11) DEFAULT NULL COMMENT '年龄',
+  `c_sex` varchar(2) DEFAULT NULL COMMENT '性别',
+  `c_birthday` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '生日',
+  `c_weight` float DEFAULT NULL COMMENT '体重',
+  `c_isSingle` tinyint(1) DEFAULT NULL COMMENT '是否单身',
+  PRIMARY KEY (`c_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
